@@ -25,4 +25,5 @@ const ArrSortFunc = () => {
     </div>
   );
 };
+
 export default ArrSortFunc;
