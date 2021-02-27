@@ -17,6 +17,7 @@ const ArrSortFunc = () => {
 
   return (
     <div>
+      <h2>Small change to sorting</h2>
       <h1>This is Array Sort Component</h1>
       <h4>Array: {displayArr}</h4>
       <button onClick={toggle}>Toggle This Array</button>
