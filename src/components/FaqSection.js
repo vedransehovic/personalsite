@@ -1,7 +1,7 @@
 import React from "react";
 //styling
 import styled from "styled-components";
-import { About } from "./styles";
+import { About } from "../styles";
 
 const FaqSection = () => {
   return (
