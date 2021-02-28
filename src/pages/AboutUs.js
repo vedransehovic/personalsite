@@ -8,10 +8,9 @@ import Sorting from "../components/Sorting";
 const AboutUs = () => {
   return (
     <>
-      {/* <AboutSection />
+      <AboutSection />
       <ServicesSection />
-      <FaqSection /> */}
-      <Sorting />
+      <FaqSection />
     </>
   );
 };
