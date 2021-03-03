@@ -11,7 +11,13 @@ import { PageAnimation } from "../animation";
 
 const OurWork = () => {
   return (
-    <Work exit="exit" variants={PageAnimation} initial="hidden" animate="show">
+    <Work
+      exit="exit"
+      variants={PageAnimation}
+      initial="hidden"
+      animate="show"
+      style={{ background: "#fff" }}
+    >
       <Movie>
         <h2>The Athlete</h2>
         <div className="line"></div>
@@ -38,7 +44,6 @@ const OurWork = () => {
 };
 
 const Work = styled(motion.div)`
-  color: white;
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
