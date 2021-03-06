@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   const [faqToggle, setFaqToggle] = useState(false);
@@ -11,50 +12,52 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <Toggle title="How Do I Start">
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
-            laboriosam aliquid laborum quos eius facere consequatur molestias
-            voluptates vero accusantium magni cupiditate, mollitia iste, placeat
-            sit laudantium illum a.
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="What products do you offer">
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
-            laboriosam aliquid laborum quos eius facere consequatur molestias
-            voluptates vero accusantium magni cupiditate, mollitia iste, placeat
-            sit laudantium illum a.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-            nobis.
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Daily Schedule">
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
-            laboriosam aliquid laborum quos eius facere consequatur molestias
-            voluptates vero accusantium magni cupiditate, mollitia iste, placeat
-            sit laudantium illum a.
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Different Payment Methods">
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
-            laboriosam aliquid laborum quos eius facere consequatur molestias
-            voluptates vero accusantium magni cupiditate, mollitia iste, placeat
-            sit laudantium illum a.
-          </p>
-        </div>
-      </Toggle>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              laboriosam aliquid laborum quos eius facere consequatur molestias
+              voluptates vero accusantium magni cupiditate, mollitia iste,
+              placeat sit laudantium illum a.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What products do you offer">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              laboriosam aliquid laborum quos eius facere consequatur molestias
+              voluptates vero accusantium magni cupiditate, mollitia iste,
+              placeat sit laudantium illum a.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              nobis.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Daily Schedule">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              laboriosam aliquid laborum quos eius facere consequatur molestias
+              voluptates vero accusantium magni cupiditate, mollitia iste,
+              placeat sit laudantium illum a.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Different Payment Methods">
+          <div className="answer">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              laboriosam aliquid laborum quos eius facere consequatur molestias
+              voluptates vero accusantium magni cupiditate, mollitia iste,
+              placeat sit laudantium illum a.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };

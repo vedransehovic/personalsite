@@ -4,11 +4,11 @@ import React, { useState } from "react";
 const Toggle = ({ children, title }) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div classname="question" onClick={() => setToggle(!toggle)}>
-      <motion.h4>{title}</motion.h4>
+    <motion.div layout classname="question" onClick={() => setToggle(!toggle)}>
+      <motion.h4 layout>{title}</motion.h4>
       {toggle ? children : ""}
-      <div fclassName="faq-line"></div>
-    </div>
+      <div className="faq-line"></div>
+    </motion.div>
   );
 };
 
