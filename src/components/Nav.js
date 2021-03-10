@@ -15,27 +15,27 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About Us</Link>
+          <Link to="/">1. About</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/" ? "40%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/work">2. Our Work</Link>
+          <Link to="/work">2. Work</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/work" ? "40%" : "0%" }}
           />
         </li>
         <li>
-          <Link to="/contact">3. Contact Us</Link>
+          <Link to="/contact">&nbsp;&nbsp;&nbsp;&nbsp;3. Contact </Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "40%" : "0%" }}
           />
         </li>
       </ul>
@@ -75,11 +75,11 @@ const StyledNav = styled.nav`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #23d997;
+  background: #ffc300;
   width: 0%;
   position: absolute;
   bottom: -80%;
-  left: 60%;
+  left: 70%;
 `;
 
 export default Nav;
