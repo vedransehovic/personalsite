@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import ved_office_bw from "../img/ved_office_bw.jpg";
 import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
@@ -37,7 +37,11 @@ const AboutSection = () => {
         </motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img
+          variants={photoAnim}
+          src={ved_office_bw}
+          alt="Vedran Office"
+        />
       </Image>
       <Wave />
     </About>
