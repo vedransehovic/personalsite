@@ -10,7 +10,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="logo" to="/">
-          Capture
+          Portfolio
         </Link>
       </h1>
       <ul>
@@ -63,8 +63,8 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   #logo {
-    font-size: 1.5rem;
-    font-family: "Lobster", cursive;
+    font-size: 2rem;
+    font-family: "Oleo Script", cursive;
     font-weight: lighter;
   }
   li {

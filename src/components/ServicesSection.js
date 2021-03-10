@@ -5,6 +5,7 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
+import nicevertical from "../img/nice-vertical.jpg";
 //Styles
 import styled from "styled-components";
 import { About, Image, Description } from "../styles";
@@ -29,7 +30,7 @@ const ServicesSection = () => {
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="diaphragm" />
+              <img src={diaphragm} alt="code" />
               <h3>Diaphragm</h3>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
@@ -51,7 +52,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="camera" />
+        <img src={nicevertical} alt="code" />
       </Image>
     </Services>
   );
